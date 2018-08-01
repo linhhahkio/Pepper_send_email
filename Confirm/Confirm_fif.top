@@ -1,0 +1,13 @@
+topic: ~Confirm()
+language: fif
+
+# Defining extra concepts out of words or group of words
+concept:(joo) [joo kyllä "kyllä kiitos" haluan "vastataan vaan"]
+concept:(en) [en e "en halua" ei "ei kiitos"]
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+u:(~joo) $output_1 = 1
+u:(~en) $output_2 = 1
+u:(lopettaa) $end = 1
