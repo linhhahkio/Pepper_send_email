@@ -2,11 +2,11 @@
 Using google cloud STT interpret user speech into text 
 
 ## This program is used to send a new email or reply to an emails:
-	- Check if there is already a receiver address (in case of Reply). If not ask for reciever name and look up the corresponding email address from contact database.
-	- Ask for subject and message of the email.
-	- Send it.
+* Check if there is already a receiver address (in case of Reply). If not ask for reciever name and look up the corresponding email address from contact database.
+* Ask for subject and message of the email.
+* Send it.
 	
-## NOTE: Please dont upload this program to the robot. To modify this application, copy the content of file behaviors.xar to the behaviors.xar in application "test-" inside the robot through SSH.
+### NOTE: Please dont upload this program to the robot. To modify this application, copy the content of file behaviors.xar to the behaviors.xar in application "test-" inside the robot through SSH.
 
 ## Program's flow:
 1. "Wait" box: wait 1 sec to make sure the application finish loading after switching from another application.
