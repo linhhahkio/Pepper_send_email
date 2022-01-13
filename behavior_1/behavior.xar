@@ -15,7 +15,7 @@
         self.folderName = None
 
     def onInput_onStart(self, p):
-        activate_this_file = "/data/home/nao/.local/share/PackageManager/apps/test-e65ff2/lib/bin/activate_this.py"
+        activate_this_file = "PATH/TO/VIRTUAL_ENV/activate_this.py"
 
         execfile(activate_this_file, dict(__file__=activate_this_file))
 
@@ -38,7 +38,7 @@
             audio = r.record(source)  # read the entire audio file
 
         # recognize speech using Google Cloud Speech
-        with open(r"/data/home/nao/.local/share/PackageManager/apps/test-e65ff2/lib/authen.json", "r") as f:
+        with open(r"PATH/TO/AUTHENTICATION/authen.json", "r") as f:
             GOOGLE_CLOUD_SPEECH_CREDENTIALS = f.read()
 
         try:
@@ -491,7 +491,7 @@ class MyClass(GeneratedClass):
         self.folderName = None
 
     def onInput_onStart(self, p):
-        activate_this_file = "/data/home/nao/.local/share/PackageManager/apps/test-e65ff2/lib/bin/activate_this.py"
+        activate_this_file = "PATH/TO/VIRTUAL_ENV/activate_this.py"
 
         execfile(activate_this_file, dict(__file__=activate_this_file))
 
@@ -514,7 +514,7 @@ class MyClass(GeneratedClass):
             audio = r.record(source)  # read the entire audio file
 
         # recognize speech using Google Cloud Speech
-        with open(r"/data/home/nao/.local/share/PackageManager/apps/test-e65ff2/lib/authen.json", "r") as f:
+        with open(r"PATH/TO/AUTHENTICATION/authen.json", "r") as f:
             GOOGLE_CLOUD_SPEECH_CREDENTIALS = f.read()
 
         try:
@@ -673,7 +673,7 @@ class MyClass(GeneratedClass):
         self.folderName = None
 
     def onInput_onStart(self, p):
-        activate_this_file = "/data/home/nao/.local/share/PackageManager/apps/test-e65ff2/lib/bin/activate_this.py"
+        activate_this_file = "PATH/TO/VIRTUAL_ENV/activate_this.py"
 
         execfile(activate_this_file, dict(__file__=activate_this_file))
 
@@ -696,7 +696,7 @@ class MyClass(GeneratedClass):
             audio = r.record(source)  # read the entire audio file
 
         # recognize speech using Google Cloud Speech
-        with open(r"/data/home/nao/.local/share/PackageManager/apps/test-e65ff2/lib/authen.json", "r") as f:
+        with open(r"PATH/TO/AUTHENTICATION/authen.json", "r") as f:
             GOOGLE_CLOUD_SPEECH_CREDENTIALS = f.read()
 
         try:
@@ -941,7 +941,7 @@ class MyClass(GeneratedClass):
         receiver = receiver.replace(" ", "")
         self.logger.info("receiver is:" + receiver)
         try:
-            database = "/home/nao/.local/share/PackageManager/apps/bg_app-4b10c1" + "/html/db/email_data.db"
+            database = "PATH/TO/APP" + "EMAIL_DB/email_data.db"
             #self.logger.info(database)
         except:
             self.logger.info("error connecting to db")
